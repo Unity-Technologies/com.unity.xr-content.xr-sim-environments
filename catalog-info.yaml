@@ -1,0 +1,16 @@
+# For more information about the available options please visit: http://go/backstage (VPN required)
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    github.com/project-slug: Unity-Technologies/xr-content-packs
+  name: xr-content-packs
+  description: "Source for XR content packages installed via Unity Content Manager."
+  labels:
+    costcenter: "5017"
+  tags:
+    - planned-public
+spec:
+  type: unity-package
+  lifecycle: pre-production
+  owner: unity-technologies/xr-content

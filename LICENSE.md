@@ -1,4 +1,4 @@
-Unity XR Content copyright © 2022 Unity Technologies ApS
+XR Simulation Environments copyright © 2022 Unity Technologies ApS
 
 Licensed under the Unity Package Distribution License (see https://unity3d.com/legal/licenses/Unity_Package_Distribution_License ).
 

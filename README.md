@@ -1,5 +1,15 @@
 # XR Simulation Environments
-[View this project in Backstage](https://backstage.corp.unity3d.com/catalog/default/component/com.unity.xr-content.xr-sim-environments) <br/>
-# Converting to public repository
-Any and all Unity software of any description (including components) (1) whose source is to be made available other than under a Unity source code license or (2) in respect of which a public announcement is to be made concerning its inner workings, may be licensed and released only upon the prior approval of Legal.
-The process for that is to access, complete, and submit this [FORM](https://docs.google.com/forms/d/e/1FAIpQLSe3H6PARLPIkWVjdB_zMvuIuIVtrqNiGlEt1yshkMCmCMirvA/viewform).
+A collection of indoor and outdoor Simulation environments and modular pieces to build your own. Simulation environments are prefabs that act as substitutes for the real world in AR. The XR Simulation Plug-in Provider, available in AR Foundation, uses Simulation environments to provide AR functionality.
+## Requirements
+This content requires AR Foundation to function. This source branch is provided for inspecting files individually or manual installation.
+## Included Simulation Environments
+* Backyard x 2
+* Bedroom x 3
+* Billboard City Block
+* Dining Room x 2
+* Factory
+* Kitchen  x 3
+* Living Room x 3
+* Museum
+* Office x 3
+* Park

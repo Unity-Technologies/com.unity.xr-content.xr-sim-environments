@@ -3,9 +3,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
-    github.com/project-slug: Unity-Technologies/xr-content-packs
-  name: xr-content-packs
-  description: "Source for XR content packages installed via Unity Content Manager."
+    github.com/project-slug: Unity-Technologies/com.unity.xr-content.xr-sim-environments
+  name: com.unity.xr-content.xr-sim-environments
+  description: "Source for XR Simulation Environments content pack used with AR Foundation."
   labels:
     costcenter: "5017"
   tags:

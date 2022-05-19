@@ -6,13 +6,14 @@ agent:
     image: package-ci/ubuntu:stable
     flavor: b1.large
 commands:
-    - npm install upm-ci-utils@stable -g --registry https://artifactory.prd.cds.internal.unity3d.com/artifactory/api/npm/upm-npm
-    - upm-ci package pack
-    - curl -L https://artifactory.prd.it.unity3d.com/artifactory/api/security/keypair/default-gpg-key/public | sudo apt-key add -
-    - sudo sh -c "echo 'deb https://artifactory.prd.it.unity3d.com/artifactory/unity-apt-local bionic main' > /etc/apt/sources.list.d/unity.list"
-    - sudo apt update
-    - sudo apt install -y upm-sign
-    - upm-sign sign ".\upm-ci~\packages\*.tgz"
+    - |
+        npm install upm-ci-utils@stable -g --registry https://artifactory.prd.cds.internal.unity3d.com/artifactory/api/npm/upm-npm
+        upm-ci package pack
+        curl -L https://artifactory.prd.it.unity3d.com/artifactory/api/security/keypair/default-gpg-key/public | sudo apt-key add -
+        sudo sh -c "echo 'deb https://artifactory.prd.it.unity3d.com/artifactory/unity-apt-local bionic main' > /etc/apt/sources.list.d/unity.list"
+        sudo apt update
+        sudo apt install -y upm-sign
+        upm-sign sign "upm-ci~/packages/*.tgz"
 artifacts:
     packages:
       paths:

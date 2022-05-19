@@ -13,4 +13,4 @@ commands:
 triggers:
     tags:
         only:
-            - "/\d+\.\d+\.\d+(-pre\.\d+)?/"
+            - /\d+\.\d+\.\d+(-pre\.\d+)?/

@@ -8,7 +8,7 @@ agent:
 commands:
     - npm install upm-ci-utils@stable -g --registry https://artifactory.prd.cds.internal.unity3d.com/artifactory/api/npm/upm-npm
     - upm-ci package pack
-    - npm install @octokit/core
+    - npm install @octokit/action
     - node .yamato/scripts/create-release.js
 triggers:
     tags:

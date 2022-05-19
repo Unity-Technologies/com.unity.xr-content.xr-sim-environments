@@ -1,4 +1,4 @@
-const { Octokit } = require("@octokit/core");
+const { Octokit } = require("@octokit/action");
 const fs = require("fs");
 
 const octokit = new Octokit();
@@ -11,6 +11,8 @@ const tagName = process.env.GIT_TAG;
 const releaseDescription = 'XR Simulation Environments version ' + tagName;
 const tgzFileName = repoName + '-' + tagName + '.tgz';
 const tgzPath = 'upm-ci~/packages/' + tgzFileName;
+
+console.log('Creating release with tgz at ' + tgzPath);
 
 async function createRelease() {
 	const createReleaseResult = await octokit.request('POST /repos/{owner}/{repo}/releases', {

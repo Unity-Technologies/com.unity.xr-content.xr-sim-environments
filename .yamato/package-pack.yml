@@ -1,6 +1,6 @@
 # ./yamato/yamato-config.yml
 
-name: Pack and publish
+name: Pack
 agent:
     type: Unity::VM
     image: package-ci/ubuntu:stable
@@ -8,8 +8,10 @@ agent:
 commands:
     - npm install upm-ci-utils@stable -g --registry https://artifactory.prd.cds.internal.unity3d.com/artifactory/api/npm/upm-npm
     - upm-ci package pack
-    - npm install @octokit/action
-    - node .yamato/scripts/create-release.js
+artifacts:
+    packages:
+      paths:
+        - "upm-ci~/packages/**"
 triggers:
     tags:
         only:

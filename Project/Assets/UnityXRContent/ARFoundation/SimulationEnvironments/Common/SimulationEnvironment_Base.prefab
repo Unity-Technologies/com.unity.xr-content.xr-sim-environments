@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3225029641968585250}
   - component: {fileID: 3225029641968585251}
+  - component: {fileID: 5823364272101982140}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -24,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3225029641968585248}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.36215335, y: 0.74811697, z: -0.19504178, w: 0.52069634}
   m_LocalPosition: {x: 0.34000003, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3090791288486868750}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 138.012, y: 660.896, z: 567.11304}
 --- !u!108 &3225029641968585251
 Light:
@@ -40,9 +41,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3225029641968585248}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.9781991, b: 0.9490196, a: 1}
   m_Intensity: 0.6
   m_Range: 10
@@ -94,6 +94,19 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &5823364272101982140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225029641968585248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9c438cdb5b74e53bf9f8abde7ccec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SimulatedLight: {fileID: 3225029641968585251}
 --- !u!1 &5106149827967227361
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,6 +131,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5106149827967227361}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -126,7 +140,6 @@ Transform:
   - {fileID: 6942383432622616183}
   - {fileID: 3225029641968585250}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7390912614923105628
 MonoBehaviour:
@@ -171,35 +184,34 @@ MonoBehaviour:
     m_UseSceneSun: 0
     m_Sun: {fileID: 3225029641968585251}
     m_AmbientProbe:
-      sh[ 0]: 0
-      sh[ 1]: 0
-      sh[ 2]: 0
-      sh[ 3]: 0
-      sh[ 4]: 0
-      sh[ 5]: 0
-      sh[ 6]: 0
-      sh[ 7]: 0
-      sh[ 8]: 0
-      sh[ 9]: 0
-      sh[10]: 0
-      sh[11]: 0
-      sh[12]: 0
-      sh[13]: 0
-      sh[14]: 0
-      sh[15]: 0
-      sh[16]: 0
-      sh[17]: 0
-      sh[18]: 0
-      sh[19]: 0
-      sh[20]: 0
-      sh[21]: 0
-      sh[22]: 0
-      sh[23]: 0
-      sh[24]: 0
-      sh[25]: 0
-      sh[26]: 0
-  m_PostProcessProfile: {fileID: 11400000, guid: a4cecc7e18acd3c4a995d597a778f539,
-    type: 2}
+      'sh[ 0]': 0
+      'sh[ 1]': 0
+      'sh[ 2]': 0
+      'sh[ 3]': 0
+      'sh[ 4]': 0
+      'sh[ 5]': 0
+      'sh[ 6]': 0
+      'sh[ 7]': 0
+      'sh[ 8]': 0
+      'sh[ 9]': 0
+      'sh[10]': 0
+      'sh[11]': 0
+      'sh[12]': 0
+      'sh[13]': 0
+      'sh[14]': 0
+      'sh[15]': 0
+      'sh[16]': 0
+      'sh[17]': 0
+      'sh[18]': 0
+      'sh[19]': 0
+      'sh[20]': 0
+      'sh[21]': 0
+      'sh[22]': 0
+      'sh[23]': 0
+      'sh[24]': 0
+      'sh[25]': 0
+      'sh[26]': 0
+  m_PostProcessProfile: {fileID: 11400000, guid: a4cecc7e18acd3c4a995d597a778f539, type: 2}
   m_ExcludeFromSelectionUI: 1
 --- !u!1 &7438395314559485242
 GameObject:
@@ -225,13 +237,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7438395314559485242}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.40625, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3090791288486868750}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7698093208294635755
 MonoBehaviour:

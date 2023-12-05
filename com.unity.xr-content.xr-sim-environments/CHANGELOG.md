@@ -5,6 +5,12 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2023-12-04
+
+### Fixed
+
+- Fixed an issue in the Museum environment where Simulated Tracked Images in the environment were not serialized with `MeshRenderer` and `MeshFilter` components, causing warnings when this environment was imported for the first time.
+
 ## [2.0.0] - 2023-11-15
 
 ### Changed

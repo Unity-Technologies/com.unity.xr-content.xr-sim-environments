@@ -2,3 +2,6 @@
 *.fbm
 *.fbm.meta
 .DS_Store
+
+# Multitool
+.multitool

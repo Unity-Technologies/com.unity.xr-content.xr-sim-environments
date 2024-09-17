@@ -1,6 +1,6 @@
 {
   "name": "com.unity.xr-content.xr-sim-environments",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "displayName": "XR Simulation Environments",
   "description": "A collection of indoor and outdoor Simulation environments and modular pieces to build your own.  Simulation environments are prefabs that act as substitutes for the real world in AR.  The XR Simulation Plug-in Provider, available in AR Foundation, uses Simulation environments to provide AR functionality.",
   "unity": "2022.3",

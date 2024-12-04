@@ -5,6 +5,13 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.1.1] - 2024-12-03
+
+### Changed
+
+- Changed the `BillboardCity` prefab to use the Golden Trumpet image to avoid the image tracking library warning that Rafflesia was too low quality of an image.
+- Added and fixed consistency for some [SimulatedBoundingBox](xref:UnityEngine.XR.Simulation.SimulatedBoundingBox) components in various scenes.
+
 ## [2.1.0] - 2023-09-18
 
 ### Added
